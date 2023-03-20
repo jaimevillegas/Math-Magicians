@@ -137,6 +137,11 @@ npm run build
 
 ## 🔭 Future Features <a name="future-features"></a>
 
+- Build core functionality: Calculator.
+- Build full website with 3 sub-pages.
+- Refactor with hooks.
+- Add tests.
+- Deploy the page.
 
 <p align="right"><a href="#readme-top">👆</a></p>
 
@@ -170,6 +175,6 @@ I would like to thank Microverse for helping us in the journey to become a Fulls
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](./LICENSE) licensed.
+This project is [MIT](./LICENSE.md) licensed.
 
 <p align="right"><a href="#readme-top">👆</a></p>
