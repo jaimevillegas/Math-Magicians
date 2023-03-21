@@ -1,16 +1,12 @@
 /* eslint-disable react/prop-types */
-// import { React, propTypes } from 'react';
 import { React } from 'react';
 
-function ButtonNumber({ numberProp }) {
+function ButtonNumber({ numberProp, indexProp }) {
   const buttonClass = `button buttonNumber button-${numberProp}`;
+  const buttonId = `button-${indexProp}`;
   return (
-    <button className={buttonClass} type="button">{numberProp}</button>
+    <button className={buttonClass} id={buttonId} type="button">{numberProp}</button>
   );
 }
-
-// ButtonNumber.propTypes = {
-//   numberProp: propTypes.number.isRequired,
-// };
 
 export default ButtonNumber;

@@ -1,27 +1,153 @@
 body {
   margin: 0;
+  padding: 0;
   font-family:
-    -apple-system,
-    BlinkMacSystemFont,
-    'Segoe UI',
     'Roboto',
     'Oxygen',
     'Ubuntu',
-    'Cantarell',
-    'Fira Sans',
-    'Droid Sans',
-    'Helvetica Neue',
     sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-size: 16px;
+  overflow-y: hidden;
+  overflow-x: hidden;
 }
 
-code {
-  font-family:
-    source-code-pro,
-    Menlo,
-    Monaco,
-    Consolas,
-    'Courier New',
-    monospace;
+input {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  border: none;
+  width: 100%;
+  font-size: 5.5rem;
+  text-align: right;
+  height: 20vh;
+  color: black;
+  background-color: #c1c1c1;
+}
+
+#root {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+}
+
+.button {
+  font-size: 4rem;
+  height: 100%;
+  width: 100%;
+  background-color: rgb(201, 201, 201);
+  border: 1px solid darkgray;
+}
+
+.button:hover {
+  cursor: pointer;
+}
+
+.buttons-container {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 80vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.button-AC {
+  grid-column: 1 / 1;
+  grid-row: 1 / 1;
+}
+
+#button-17 {
+  grid-column: 2 / 2;
+  grid-row: 1 / 1;
+}
+
+#button-18 {
+  grid-column: 3 / 3;
+  grid-row: 1 / 1;
+}
+
+#button-11 {
+  background-color: rgb(255, 157, 66);
+  grid-column: 4 / 4;
+  grid-row: 1 / 1;
+}
+
+.button-7 {
+  grid-column: 1 / 1;
+  grid-row: 2 / 2;
+}
+
+.button-8 {
+  grid-column: 2 / 2;
+  grid-row: 2 / 2;
+}
+
+.button-9 {
+  grid-column: 3 / 3;
+  grid-row: 2 / 2;
+}
+
+.button-x {
+  background-color: rgb(255, 157, 66);
+  grid-column: 4 / 4;
+  grid-row: 2 / 2;
+}
+
+.button-4 {
+  grid-column: 1 / 1;
+  grid-row: 3 / 3;
+}
+
+.button-5 {
+  grid-column: 2 / 2;
+  grid-row: 3 / 3;
+}
+
+.button-6 {
+  grid-column: 3 / 3;
+  grid-row: 3 / 3;
+}
+
+#button-13 {
+  background-color: rgb(255, 157, 66);
+  grid-column: 4 / 4;
+  grid-row: 3 / 3;
+}
+
+.button-1 {
+  grid-column: 1 / 1;
+  grid-row: 4 / 4;
+}
+
+.button-2 {
+  grid-column: 2 / 2;
+  grid-row: 4 / 4;
+}
+
+.button-3 {
+  grid-column: 3 / 3;
+  grid-row: 4 / 4;
+}
+
+#button-14 {
+  background-color: rgb(255, 157, 66);
+  grid-column: 4 / 4;
+  grid-row: 4 / 4;
+}
+
+.button-0 {
+  grid-column: 1 / 3;
+  grid-row: 5 / 5;
+}
+
+#button-10 {
+  grid-column: 3 / 3;
+  grid-row: 5 / 5;
+}
+
+#button-15 {
+  background-color: rgb(255, 157, 66);
+  grid-column: 4 / 4;
+  grid-row: 5 / 5;
 }
