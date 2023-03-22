@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import ButtonNumber from './ButtonNumber';
 import calculate from '../logic/calculate';
 
 export default function Calculator() {
@@ -34,6 +33,9 @@ export default function Calculator() {
       let currentValue = object.total + value;
       if (currentValue[0] === '0') currentValue = currentValue.slice(1);
       setObject({ ...object, total: currentValue });
+    } else {
+      const currentValue = object.next + value;
+      setObject({ ...object, next: currentValue });
     }
   };
 
@@ -43,7 +45,7 @@ export default function Calculator() {
       setObject({
         operation: result.operation ? result.operation : operator,
         next: result.next ? result.next : '',
-        total: result.total ? result.total: '0',
+        total: result.total ? result.total : '0',
       });
     } else {
       setObject({ ...object, operation: operator });
@@ -52,27 +54,27 @@ export default function Calculator() {
 
   return (
     <div>
-      <input type="text" placeholder="0" />
+      <div className="display">{object.next || object.total}</div>
       <div className="buttons-container">
-        <ButtonNumber key={0} indexProp={0} numberProp={0} />
-        <ButtonNumber key={1} indexProp={1} numberProp={1} />
-        <ButtonNumber key={2} indexProp={2} numberProp={2} />
-        <ButtonNumber key={3} indexProp={3} numberProp={3} />
-        <ButtonNumber key={4} indexProp={4} numberProp={4} />
-        <ButtonNumber key={5} indexProp={5} numberProp={5} />
-        <ButtonNumber key={6} indexProp={6} numberProp={6} />
-        <ButtonNumber key={7} indexProp={7} numberProp={7} />
-        <ButtonNumber key={8} indexProp={8} numberProp={8} />
-        <ButtonNumber key={9} indexProp={9} numberProp={9} />
-        <ButtonNumber key={10} indexProp={10} numberProp="." />
-        <ButtonNumber key={11} indexProp={11} numberProp="/" />
-        <ButtonNumber key={12} indexProp={12} numberProp="x" />
-        <ButtonNumber key={13} indexProp={13} numberProp="-" />
-        <ButtonNumber key={14} indexProp={14} numberProp="+" />
-        <ButtonNumber key={15} indexProp={15} numberProp="=" />
-        <ButtonNumber key={16} indexProp={16} numberProp="AC" />
-        <ButtonNumber key={17} indexProp={17} numberProp="+/-" />
-        <ButtonNumber key={18} indexProp={18} numberProp="%" />
+        <button className="button buttonNumber button-0" type="button" onClick={() => processValue('0')}>0</button>
+        <button className="button buttonNumber button-1" type="button" onClick={() => processValue('1')}>1</button>
+        <button className="button buttonNumber button-2" type="button" onClick={() => processValue('2')}>2</button>
+        <button className="button buttonNumber button-3" type="button" onClick={() => processValue('3')}>3</button>
+        <button className="button buttonNumber button-4" type="button" onClick={() => processValue('4')}>4</button>
+        <button className="button buttonNumber button-5" type="button" onClick={() => processValue('5')}>5</button>
+        <button className="button buttonNumber button-6" type="button" onClick={() => processValue('6')}>6</button>
+        <button className="button buttonNumber button-7" type="button" onClick={() => processValue('7')}>7</button>
+        <button className="button buttonNumber button-8" type="button" onClick={() => processValue('8')}>8</button>
+        <button className="button buttonNumber button-9" type="button" onClick={() => processValue('9')}>9</button>
+        <button className="button buttonNumber button-10" type="button" onClick={() => processValue('.')}>.</button>
+        <button className="button buttonNumber button-11" id="button-11" type="button" onClick={() => operatorBasic('÷')}>÷</button>
+        <button className="button buttonNumber button-x" id="button-12" type="button" onClick={() => operatorBasic('x')}>x</button>
+        <button className="button buttonNumber button-13" id="button-13" type="button" onClick={() => operatorBasic('-')}>-</button>
+        <button className="button buttonNumber button-14" id="button-14" type="button" onClick={() => operatorBasic('+')}>+</button>
+        <button className="button buttonNumber button-15" id="button-15" type="button" onClick={() => operatorSymbol('=')}>=</button>
+        <button className="button buttonNumber button-AC" id="button-16" type="button" onClick={() => operatorSymbol('AC')}>AC</button>
+        <button className="button buttonNumber button-17" id="button-17" type="button" onClick={() => operatorSymbol('+/-')}>+/-</button>
+        <button className="button buttonNumber button-18" id="button-18" type="button" onClick={() => operatorSymbol('%')}>%</button>
       </div>
     </div>
   );
