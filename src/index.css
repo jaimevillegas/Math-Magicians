@@ -11,7 +11,7 @@ body {
   overflow-x: hidden;
 }
 
-input {
+.display {
   display: inline-block;
   margin: 0;
   padding: 0;
