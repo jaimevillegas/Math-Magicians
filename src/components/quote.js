@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 
 const baseURL = 'https://api.api-ninjas.com/v1/quotes';
-export default function ApiNinja() {
+export default function Quote() {
   const [data, setData] = useState(null);
   const [loading, setLoading] = useState(false);
   const [hasError, setHasError] = useState(null);
