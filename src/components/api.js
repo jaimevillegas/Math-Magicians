@@ -4,6 +4,7 @@ const baseURL = 'https://api.api-ninjas.com/v1/quotes';
 export default function ApiNinja() {
   const [data, setData] = useState(null);
   const [loading, setLoading] = useState(false);
+  const [hasError, setHasError] = useState(null);
 
   const fetchingAPI = async () => {
     try {
@@ -17,13 +18,15 @@ export default function ApiNinja() {
         .then((res) => setData(res));
       setLoading(false);
     } catch (error) {
-      console.error(error);
+      setHasError(true);
     }
   };
 
   useEffect(() => {
     fetchingAPI();
   }, []);
+
+  if (hasError) return <div>Something went wrong!</div>;
 
   return (
     <div className="quote-container">
