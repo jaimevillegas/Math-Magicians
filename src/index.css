@@ -19,7 +19,7 @@ body {
   width: 100%;
   font-size: 5.5rem;
   text-align: right;
-  height: 20vh;
+  height: 10vh;
   color: black;
   background-color: #c1c1c1;
 }
@@ -150,4 +150,11 @@ body {
   background-color: rgb(255, 157, 66);
   grid-column: 4 / 4;
   grid-row: 5 / 5;
+}
+
+.quote-container {
+  height: 20vh;
+  padding: 1rem;
+  margin-bottom: 10px;
+  font-size: 1.2rem;
 }
