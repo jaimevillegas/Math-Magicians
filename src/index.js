@@ -21,8 +21,4 @@ root.render(
       </Route>
     </Routes>
   </BrowserRouter>,
-  // <React.StrictMode>
-  //   <Calculator />
-  //   <Quote />
-  // </React.StrictMode>,
 );
