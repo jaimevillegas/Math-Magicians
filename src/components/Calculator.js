@@ -53,7 +53,7 @@ export default function Calculator() {
   };
 
   return (
-    <div>
+    <div className="calculator-wrapper">
       <div className="display">{object.next || object.total}</div>
       <div className="buttons-container">
         <button className="button buttonNumber button-0" type="button" onClick={() => processValue('0')}>0</button>

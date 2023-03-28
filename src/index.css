@@ -11,6 +11,55 @@ body {
   overflow-x: hidden;
 }
 
+.header-website {
+  width: 100%;
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-website h2 {
+  font-size: 34px;
+  margin: 0;
+  padding: 0;
+}
+
+.header-website ul {
+  display: flex;
+  margin: 0 auto;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+  padding-right: 50px;
+  list-style-type: none;
+  font-size: 20px;
+}
+
+.header-website a {
+  margin: 0 auto;
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  align-self: center;
+}
+
+.header-website a:hover {
+  color: purple;
+}
+
+.home-wrapper {
+  padding: 80px;
+}
+
+.calculator-wrapper {
+  width: 80%;
+  margin: auto;
+  border: 2px solid purple;
+  box-shadow: 2px 2px 8px purple;
+}
+
 .display {
   display: inline-block;
   margin: 0;
@@ -21,7 +70,8 @@ body {
   text-align: right;
   height: 10vh;
   color: black;
-  background-color: #c1c1c1;
+
+  /* background-color: #c1c1c1; */
 }
 
 #root {
@@ -153,8 +203,10 @@ body {
 }
 
 .quote-container {
-  height: 20vh;
   padding: 1rem;
-  margin-bottom: 10px;
-  font-size: 1.2rem;
+  width: 80%;
+  margin: auto;
+  font-size: 2.2rem;
+  border: 2px solid purple;
+  box-shadow: 2px 2px 8px purple;
 }
