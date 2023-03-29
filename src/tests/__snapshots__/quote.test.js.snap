@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Quote test Quote component display loading status 1`] = `
+<div
+  class="quote-container"
+  title="quote-container"
+>
+  Loading Quote
+</div>
+`;
