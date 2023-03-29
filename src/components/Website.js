@@ -4,7 +4,7 @@ import { Outlet } from 'react-router-dom';
 export default function Website() {
   return (
     <>
-      <header className="header-website">
+      <header title="header-website" className="header-website">
         <h2>Math Magicians</h2>
         <nav>
           <ul>
