@@ -29,7 +29,7 @@ export default function Quote() {
   if (hasError) return <div>Something went wrong!</div>;
 
   return (
-    <div className="quote-container">
+    <div title="quote-container" className="quote-container">
       {!loading
         ? (
           <>

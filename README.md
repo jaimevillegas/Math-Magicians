@@ -124,6 +124,13 @@ npm run build
 
 ## 👥 Authors <a name="authors"></a>
 
+
+👤 **Jose Luis Vazquez Flores**
+
+- GitHub: [@jlvFlores](https://github.com/jlvFlores)
+- Twitter: [@JoseVaz44312762](https://twitter.com/JoseVaz44312762)
+- LinkedIn: [Jose Vazquez](https://www.linkedin.com/in/jose-vazquez-178a8225a/)
+
 👤 **Jaime Villegas**
 
 - GitHub: [@githubhandle](https://github.com/jaimevillegas)

@@ -1,6 +1,6 @@
 export default function Home() {
   return (
-    <div className="home-wrapper">
+    <div title="home-wrapper" className="home-wrapper">
       <h1 className="home-title">Welcome to our page!</h1>
       <p className="home-paragraph">
         Lorem ipsum dolor, sit amet consectetur adipisicing elit.
