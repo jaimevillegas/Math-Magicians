@@ -72,7 +72,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-Currently, there are not Live Demo available. I will let you know when it's available ASAP!
+https://math-magicians-tu1x.onrender.com/
 
 <p align="right"><a href="#readme-top">👆</a></p>
 
